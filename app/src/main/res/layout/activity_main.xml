@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mtw.josealejandrosanchezortega.PhoneNumberSpinner.MainActivity"
-    android:orientation="horizontal">
+    tools:context="com.mtw.josealejandrosanchezortega.PhoneNumberSpinner.MainActivity">
 
-    <EditText
-        android:id="@+id/editText_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_phonenumber"
-        android:inputType="phone" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <Spinner
-        android:id="@+id/label_spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </Spinner>
+        <EditText
+            android:id="@+id/editText_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phonenumber"
+            android:inputType="phone" />
 
-    <Button
-        android:id="@+id/button_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="showText"
-        android:text="@string/show_button" />
+        <Spinner
+            android:id="@+id/label_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+        <Button
+            android:id="@+id/button_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showText"
+            android:text="@string/show_button" />
+
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -47,5 +54,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
-
+</RelativeLayout>
